@@ -14,6 +14,11 @@ module.exports = {
         dark: "#363636",
         "border-light": "#E0E0E0",
         paragraph: "#A8A8A8",
+        pink: "#BD3E96",
+        "light-pink": "#FFAAE5",
+      },
+      backgroundSize: {
+        "50%": "50% 50%",
       },
       screens: {
         "2xl": "1440px",

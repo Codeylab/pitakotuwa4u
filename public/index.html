@@ -20,6 +20,7 @@
     <!-- Header Section Start -->
     <header class="bg-white">
         <div class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 py-3">
+            <!-- Nav Top Bar Start -->
             <div
                 class="flex md:flex-row flex-col flex-wrap md:justify-between items-center md:space-x-4 md:space-y-0 space-y-4 mb-8">
                 <!-- Contact  -->
@@ -56,80 +57,122 @@
                         in</button>
                 </div>
             </div>
+            <!-- Nav Top Bar End -->
 
-            <nav class="flex flex-row items-center justify-between ">
+            <!-- Navbar Start -->
+            <nav class="flex flex-wrap flex-row items-center justify-between mb-7">
+                <!-- Logo -->
                 <div class="">
-                    <img src="./assets/images/logo.png" alt="" class="lg:w-[12.5rem] md:w-40 sm:w-32 w-28">
+                    <img src="./assets/images/logo.png" alt="" class="lg:w-[12.5rem] md:w-44 w-40">
                 </div>
-
-                <div class="flex items-center border border-border-light rounded-xl">
-                    <div class="my-1 border-r border-border-light">
-                        <input type="text" class="text-xs focus:outline-none px-5 py-4 w-96"
-                            placeholder="Search for product or shop">
-                    </div>
-                    <!-- This example requires Tailwind CSS v2.0+ -->
-                    <div class="relative inline-block text-left">
-                        <div>
-                            <button type="button"
-                                class="inline-flex justify-center w-full rounded-md border border-gray-300 shadow-sm px-4 py-2 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-100 focus:ring-indigo-500"
-                                id="options-menu" aria-expanded="true" aria-haspopup="true">
-                                Options
-                                <!-- Heroicon name: solid/chevron-down -->
-                                <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
-                                    fill="currentColor" aria-hidden="true">
-                                    <path fill-rule="evenodd"
-                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                            </button>
+                <!-- Search Option -->
+                <div class="lg:order-2 order-3 lg:w-auto lg:w-6/12 w-full lg:mt-0 mt-4">
+                    <div
+                        class="flex sm:flex-nowrap flex-wrap sm:divide-y-0 divide-y items-center border border-border-light rounded-xl">
+                        <!-- Search Input -->
+                        <div class="my-1 ml-1 border-r border-border-light w-full">
+                            <input type="text"
+                                class="sm:text-left text-center text-xs focus:outline-none px-5 py-4 w-full"
+                                placeholder="Search for product or shop">
                         </div>
+                        <!-- Catagories Dropdown Menu -->
+                        <div class="relative inline-block text-left sm:w-auto w-full" x-data="{openMenu: false}">
+                            <div class="mx-3">
+                                <button type="button" @click="openMenu = !openMenu"
+                                    class="inline-flex justify-center w-full px-4 py-4 bg-white text-xs font-semibold text-paragraph focus:outline-none"
+                                    id="options-menu" aria-expanded="true" aria-haspopup="true">
+                                    Categories
+                                    <!-- Heroicon name: solid/chevron-down -->
+                                    <svg class="-mr-1 ml-2 h-5 w-5" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                            </div>
 
-
-                        <div class="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
-                            role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <div class="py-1" role="none">
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                                    role="menuitem">Account settings</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                                    role="menuitem">Support</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
-                                    role="menuitem">License</a>
+                            <div class="origin-top-right absolute right-0 sm:mt-3 sm:w-56 w-full sm:rounded-md rounded-b-md shadow-lg bg-white focus:outline-none"
+                                x-show="openMenu" role="menu" aria-orientation="vertical"
+                                aria-labelledby="options-menu">
+                                <div class="py-1" role="none">
+                                    <a href="#" class="block px-4 py-2 text-sm text-paragraph" role="menuitem">Item 1
+                                    </a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-paragraph" role="menuitem">Item
+                                        2</a>
+                                    <a href="#" class="block px-4 py-2 text-sm text-paragraph" role="menuitem">Item
+                                        3</a>
+                                </div>
                             </div>
                         </div>
+                        <!-- Search Button -->
+                        <button
+                            class="sm:w-auto w-full h-full py-5 px-6 bg-light-blue border border-light-blue sm:rounded-r-xl sm:rounded-bl-none rounded-b-xl flex items-center justify-center">
+                            <svg class="w-4 h-4" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.03 14.17l-3.96-3.96a5.52 5.52 0 10-.82.82L14.21 15a.58.58 0 00.82 0 .58.58 0 000-.82zM6.8 11.1a4.36 4.36 0 110-8.7 4.36 4.36 0 010 8.7z"
+                                    fill="#fff" stroke="#fff" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
+                <!-- Cart Icons -->
+                <div class="lg:order-3 order-2">
+                    <div class="flex items-center">
+                        <button class="mr-3">
+                            <svg width="21" height="19" viewBox="0 0 21 19" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.84 3.12a.75.75 0 001.22 0 4.78 4.78 0 013.9-2.03c2.65 0 4.82 2.2 4.82 4.92 0 .92-.39 1.97-1.08 3.1A19.86 19.86 0 0116 12.42a44.85 44.85 0 01-5.46 4.65.18.18 0 01-.22 0 41.68 41.68 0 01-5.45-4.55A18.96 18.96 0 012.21 9.2a6.35 6.35 0 01-1.09-3.19c0-1.78.57-2.98 1.4-3.75A4.96 4.96 0 015.94 1.1c1.6 0 3 .8 3.9 2.03z"
+                                    stroke="#383838" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                        </button>
+                        <button class="flex relative">
+                            <svg class="w-5 h-5" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M17.38 18.22l-.96-12.17a1.52 1.52 0 00-1.51-1.4H13v-.08a4.18 4.18 0 00-8.37 0v.09h-1.9c-.8 0-1.46.61-1.52 1.4L.26 18.21a3.53 3.53 0 003.5 3.8h10.11a3.53 3.53 0 003.51-3.8zM5.91 4.57a2.92 2.92 0 015.82 0v.09H5.91v-.09zm9.62 15.46c-.43.46-1.02.72-1.66.72H3.77c-.64 0-1.22-.26-1.66-.72a2.23 2.23 0 01-.59-1.7L2.5 6.14a.25.25 0 01.24-.23h1.91v1.56a.63.63 0 001.27 0V5.92h5.82v1.56a.63.63 0 001.27 0V5.92h1.9c.14 0 .25.1.26.23l.96 12.17c.05.63-.16 1.24-.6 1.7z"
+                                    fill="#383838" stroke="#383838" stroke-width=".4" />
+                            </svg>
+                            <span
+                                class="w-5 h-5 bg-dark text-white text-[10px] rounded-full flex items-center justify-center absolute -bottom-2 -right-2">
+                                2
+                            </span>
+                        </button>
 
-                <div class="flex items-center">
-                    <button class="mr-3">
-                        <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M9.84 3.12a.75.75 0 001.22 0 4.78 4.78 0 013.9-2.03c2.65 0 4.82 2.2 4.82 4.92 0 .92-.39 1.97-1.08 3.1A19.86 19.86 0 0116 12.42a44.85 44.85 0 01-5.46 4.65.18.18 0 01-.22 0 41.68 41.68 0 01-5.45-4.55A18.96 18.96 0 012.21 9.2a6.35 6.35 0 01-1.09-3.19c0-1.78.57-2.98 1.4-3.75A4.96 4.96 0 015.94 1.1c1.6 0 3 .8 3.9 2.03z"
-                                stroke="#383838" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </button>
-                    <button class="flex relative">
-                        <svg class="w-5 h-5" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M17.38 18.22l-.96-12.17a1.52 1.52 0 00-1.51-1.4H13v-.08a4.18 4.18 0 00-8.37 0v.09h-1.9c-.8 0-1.46.61-1.52 1.4L.26 18.21a3.53 3.53 0 003.5 3.8h10.11a3.53 3.53 0 003.51-3.8zM5.91 4.57a2.92 2.92 0 015.82 0v.09H5.91v-.09zm9.62 15.46c-.43.46-1.02.72-1.66.72H3.77c-.64 0-1.22-.26-1.66-.72a2.23 2.23 0 01-.59-1.7L2.5 6.14a.25.25 0 01.24-.23h1.91v1.56a.63.63 0 001.27 0V5.92h5.82v1.56a.63.63 0 001.27 0V5.92h1.9c.14 0 .25.1.26.23l.96 12.17c.05.63-.16 1.24-.6 1.7z"
-                                fill="#383838" stroke="#383838" stroke-width=".4" />
-                        </svg>
-                        <span
-                            class="w-5 h-5 bg-dark text-white text-[10px] rounded-full flex items-center justify-center absolute -bottom-2 -right-2">
-                            2
-                        </span>
-                    </button>
-
+                    </div>
                 </div>
             </nav>
-
-
-
-
-
+            <!-- Navbar End -->
         </div>
+
+        <!-- Nav Menu Start -->
+        <div class="border-t-2 border-pink bg-clip-border bg-pink w-full overflow-hidden h-[52px] "
+            style="background: linear-gradient(90deg, #fff 50%, #BD3E96 50%); background-clip: border-box;">
+            <div class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 py-0 flex items-center w-full relative">
+                <div class="flex w-48 z-50">
+                    <button class="text-xs text-paragraph font-semibold flex pt-5 pb-3">
+                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x=".06" y=".59" width="18.36" height="2.45" rx="1.23" fill="#727272" />
+                            <rect x=".06" y="7.34" width="18.36" height="2.45" rx="1.23" fill="#727272" />
+                            <rect x=".06" y="14.1" width="18.36" height="2.45" rx="1.23" fill="#727272" />
+                        </svg>
+                        <span class="ml-2">All Categories</span>
+                    </button>
+                </div>
+                <div class="bg-pink h-12 w-32 ml-8 transform rotate-45 absolute left-32 z-0"></div>
+                <div class="bg-pink z-50">
+                    <div class="hidden md:block lg:ml-10 lg:pr-4 md:space-x-8 pt-3 pb-5">
+                        <a href="#" class="font-medium text-light-pink text-sm">Pitakotuwa Express</a>
+                        <a href="#" class="font-medium text-light-pink text-sm">All Shops</a>
+                        <a href="#" class="font-medium text-light-pink text-sm">Pettah Streets</a>
+                        <a href="#" class="font-medium text-light-pink text-sm">Pettah Town</a>
+                        <a href="#" class="font-medium text-light-pink text-sm">Foreign Fair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Nav Menu End -->
     </header>
     <!-- Header Section End -->
 </body>
