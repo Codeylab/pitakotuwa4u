@@ -1,0 +1,27 @@
+{
+  "name": "pitakotuwa4u",
+  "version": "1.0.0",
+  "description": "Tailwind css webpage",
+  "main": "index.js",
+  "scripts": {
+    "start": "postcss tailwind.css -o public/assets/css/tailwind.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moloypal2021/pitakotuwa4u.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moloypal2021/pitakotuwa4u/issues"
+  },
+  "homepage": "https://github.com/moloypal2021/pitakotuwa4u#readme",
+  "devDependencies": {
+    "@tailwindcss/jit": "^0.1.17",
+    "autoprefixer": "^10.2.5",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
+    "tailwindcss": "^2.0.4"
+  }
+}
