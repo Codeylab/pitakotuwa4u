@@ -1,9 +1,35 @@
 @import url('https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer base {
     body {
         font-family: 'Gilroy', sans-serif !important;
+    }
+}
+
+.nav-pink-bg {
+    background: linear-gradient(45deg, #fff 50%, #BD3E96 50%);
+}
+
+@media (min-width:768px) {
+    .nav-pink-bg {
+        background: linear-gradient(45deg, #fff 22%, #BD3E96 22%);
+    }
+}
+
+.half-pink-white-bg {
+    background: linear-gradient(45deg, #fff 50%, #BD3E96 50%);
+}
+
+.slider-bg {
+    /* background: #E2E2E2; */
+    background: linear-gradient(-15deg, #E2E2E2 50%, #B7B7B7 50%);
+}
+
+@media (min-width:768px) {
+    .slider-bg {
+        background: linear-gradient(55deg, #E2E2E2 50%, #B7B7B7 50%);
     }
 }

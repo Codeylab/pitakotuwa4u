@@ -92,7 +92,7 @@
                                 </button>
                             </div>
 
-                            <div class="origin-top-right absolute right-0 sm:mt-3 sm:w-56 w-full sm:rounded-md rounded-b-md shadow-lg bg-white focus:outline-none"
+                            <div class="origin-top-right absolute right-0 sm:mt-3 sm:w-56 w-full sm:rounded-md rounded-b-md shadow-lg bg-white focus:outline-none z-50"
                                 x-show="openMenu" role="menu" aria-orientation="vertical"
                                 aria-labelledby="options-menu">
                                 <div class="py-1" role="none">
@@ -147,10 +147,9 @@
         </div>
 
         <!-- Nav Menu Start -->
-        <div class="border-t-2 border-pink bg-clip-border bg-pink w-full overflow-hidden h-[52px] "
-            style="background: linear-gradient(90deg, #fff 50%, #BD3E96 50%); background-clip: border-box;">
-            <div class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 py-0 flex items-center w-full relative">
-                <div class="flex w-48 z-50">
+        <div class="border-t-2 border-pink half-pink-white-bg w-full">
+            <div class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 flex items-center w-full nav-pink-bg ">
+                <div class="flex w-32 ">
                     <button class="text-xs text-paragraph font-semibold flex pt-5 pb-3">
                         <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x=".06" y=".59" width="18.36" height="2.45" rx="1.23" fill="#727272" />
@@ -160,21 +159,51 @@
                         <span class="ml-2">All Categories</span>
                     </button>
                 </div>
-                <div class="bg-pink h-12 w-32 ml-8 transform rotate-45 absolute left-32 z-0"></div>
-                <div class="bg-pink z-50">
-                    <div class="hidden md:block lg:ml-10 lg:pr-4 md:space-x-8 pt-3 pb-5">
-                        <a href="#" class="font-medium text-light-pink text-sm">Pitakotuwa Express</a>
-                        <a href="#" class="font-medium text-light-pink text-sm">All Shops</a>
-                        <a href="#" class="font-medium text-light-pink text-sm">Pettah Streets</a>
-                        <a href="#" class="font-medium text-light-pink text-sm">Pettah Town</a>
-                        <a href="#" class="font-medium text-light-pink text-sm">Foreign Fair</a>
-                    </div>
+                <div class="hidden md:block lg:ml-32 md:ml-16 lg:pr-4 lg:space-x-8 md:space-x-4 py-4 ">
+                    <a href="#" class="font-medium text-light-pink text-sm">Pitakotuwa Express</a>
+                    <a href="#" class="font-medium text-light-pink text-sm">All Shops</a>
+                    <a href="#" class="font-medium text-light-pink text-sm">Pettah Streets</a>
+                    <a href="#" class="font-medium text-light-pink text-sm">Pettah Town</a>
+                    <a href="#" class="font-medium text-light-pink text-sm">Foreign Fair</a>
                 </div>
             </div>
         </div>
         <!-- Nav Menu End -->
     </header>
     <!-- Header Section End -->
+
+    <!-- Slider Section Start -->
+    <section class="slider-bg ">
+        <div class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 py-7">
+            <div class="grid md:grid-cols-2 gap-8 items-center mb-3">
+                <div class="md:order-1 order-2 text-center">
+                    <h1
+                        class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-gloria text-dark2 uppercase tracking-wider">
+                        New arrival</h1>
+                    <div class="flex items-center justify-center lg:space-x-4 space-x-2 mb-2">
+                        <h1
+                            class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold tracking-wider text-[#4A4A4A] uppercase">
+                            Sale upto</h1>
+                        <h1
+                            class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-extrabold tracking-wider uppercase bg-clip-text text-transparent bg-gradient-to-r from-blue to-red-600">
+                            40% off</h1>
+                    </div>
+                    <p class="sm:text-base text-sm text-paragraph font-semibold max-w-xs mx-auto mb-8">Explore new
+                        colors to live
+                        in, and bring the
+                        soothing vibes of nature to your style.</p>
+
+                    <a href="#"
+                        class="bg-light-blue rounded-md text-xs text-white uppercase font-bold focus:outline-none px-8 py-3">shop
+                        now</a>
+                </div>
+                <div class="md:order-2 order-1">
+                    <img src="./assets/images/img-1.png" alt="" class="w-full md:max-w-lg max-w-xs mx-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Slider Section End -->
 </body>
 
 </html>
