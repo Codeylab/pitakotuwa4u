@@ -30,6 +30,70 @@
 
 @media (min-width:768px) {
     .slider-bg {
-        background: linear-gradient(55deg, #E2E2E2 50%, #B7B7B7 50%);
+        background: linear-gradient(50deg, #E2E2E2 55%, #B7B7B7 55%);
     }
+}
+
+/* smaller, dark, rounded square */
+
+.hero-slider .flickity-button {
+    background: #C4C4C4;
+}
+
+.hero-slider .flickity-button:hover {
+    background: #454545;
+}
+
+.hero-slider .flickity-prev-next-button {
+    width: 34px;
+    height: 34px;
+    border-radius: 32px;
+}
+
+/* icon color */
+
+.hero-slider .flickity-button-icon {
+    fill: white;
+}
+
+/* position outside */
+
+@media(min-width: 1200px) {
+    .hero-slider .flickity-prev-next-button.previous {
+        left: -40px;
+        margin-right: 32px;
+    }
+    .hero-slider .flickity-prev-next-button.next {
+        right: -40px;
+        margin-left: 32px;
+    }
+}
+
+.hero-slider .carousel-cell {
+    width: 100%;
+    /* full width */
+    margin-right: 10px;
+}
+
+/* position dots in carousel */
+
+.hero-slider .flickity-page-dots {
+    bottom: 10px;
+}
+
+/* white circles */
+
+.hero-slider .flickity-page-dots .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: #C5C5C5;
+}
+
+/* fill-in selected dot */
+
+.hero-slider .flickity-page-dots .dot.is-selected {
+    width: 24px;
+    border-radius: 8px;
+    background: white;
 }

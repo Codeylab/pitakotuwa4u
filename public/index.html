@@ -173,37 +173,115 @@
     <!-- Header Section End -->
 
     <!-- Slider Section Start -->
-    <section class="slider-bg ">
-        <div class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 py-7">
-            <div class="grid md:grid-cols-2 gap-8 items-center mb-3">
-                <div class="md:order-1 order-2 text-center">
-                    <h1
-                        class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-gloria text-dark2 uppercase tracking-wider">
-                        New arrival</h1>
-                    <div class="flex items-center justify-center lg:space-x-4 space-x-2 mb-2">
+    <section class="slider-bg hero-slider mb-64" x-data="carousel()" x-init="init()">
+        <div class="container xl:max-w-[1182px] mx-auto sm:px-8 px-6 py-7" x-ref="carousel">
+            <div class="w-full mx-auto">
+                <div class="grid md:grid-cols-2 gap-y-8 items-center mb-6">
+                    <div class="md:order-1 order-2 text-center">
                         <h1
-                            class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold tracking-wider text-[#4A4A4A] uppercase">
-                            Sale upto</h1>
-                        <h1
-                            class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-extrabold tracking-wider uppercase bg-clip-text text-transparent bg-gradient-to-r from-blue to-red-600">
-                            40% off</h1>
-                    </div>
-                    <p class="sm:text-base text-sm text-paragraph font-semibold max-w-xs mx-auto mb-8">Explore new
-                        colors to live
-                        in, and bring the
-                        soothing vibes of nature to your style.</p>
+                            class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-gloria text-dark2 uppercase tracking-wider">
+                            New arrival</h1>
+                        <div class="flex items-center justify-center lg:space-x-4 space-x-2 mb-2">
+                            <h1
+                                class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold tracking-wider text-[#4A4A4A] uppercase">
+                                Sale upto</h1>
+                            <h1
+                                class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-extrabold tracking-wider uppercase bg-clip-text text-transparent bg-gradient-to-r from-blue to-red-600">
+                                40% off</h1>
+                        </div>
+                        <p class="sm:text-base text-sm text-paragraph font-semibold max-w-xs mx-auto mb-8">Explore new
+                            colors to live
+                            in, and bring the
+                            soothing vibes of nature to your style.</p>
 
-                    <a href="#"
-                        class="bg-light-blue rounded-md text-xs text-white uppercase font-bold focus:outline-none px-8 py-3">shop
-                        now</a>
+                        <a href="#"
+                            class="bg-light-blue rounded-md text-xs text-white uppercase font-bold focus:outline-none px-8 py-3">shop
+                            now</a>
+                    </div>
+                    <div class="md:order-2 order-1">
+                        <img src="./assets/images/img-1.png" alt="" class="w-full md:max-w-2xl max-w-xs mx-auto">
+                    </div>
                 </div>
-                <div class="md:order-2 order-1">
-                    <img src="./assets/images/img-1.png" alt="" class="w-full md:max-w-lg max-w-xs mx-auto">
+            </div>
+            <div class="w-full mx-auto">
+                <div class="grid md:grid-cols-2 gap-y-8 items-center mb-6">
+                    <div class="md:order-1 order-2 text-center">
+                        <h1
+                            class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-gloria text-dark2 uppercase tracking-wider">
+                            New arrival</h1>
+                        <div class="flex items-center justify-center lg:space-x-4 space-x-2 mb-2">
+                            <h1
+                                class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold tracking-wider text-[#4A4A4A] uppercase">
+                                Sale upto</h1>
+                            <h1
+                                class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-extrabold tracking-wider uppercase bg-clip-text text-transparent bg-gradient-to-r from-blue to-red-600">
+                                40% off</h1>
+                        </div>
+                        <p class="sm:text-base text-sm text-paragraph font-semibold max-w-xs mx-auto mb-8">Explore new
+                            colors to live
+                            in, and bring the
+                            soothing vibes of nature to your style.</p>
+
+                        <a href="#"
+                            class="bg-light-blue rounded-md text-xs text-white uppercase font-bold focus:outline-none px-8 py-3">shop
+                            now</a>
+                    </div>
+                    <div class="md:order-2 order-1">
+                        <img src="./assets/images/img-1.png" alt="" class="w-full md:max-w-lg max-w-xs mx-auto">
+                    </div>
+                </div>
+            </div>
+            <div class="w-full mx-auto">
+                <div class="grid md:grid-cols-2 gap-y-8 items-center mb-6">
+                    <div class="md:order-1 order-2 text-center">
+                        <h1
+                            class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-gloria text-dark2 uppercase tracking-wider">
+                            New arrival</h1>
+                        <div class="flex items-center justify-center lg:space-x-4 space-x-2 mb-2">
+                            <h1
+                                class="lg:text-4xl md:text-3xl sm:text-2xl text-xl font-bold tracking-wider text-[#4A4A4A] uppercase">
+                                Sale upto</h1>
+                            <h1
+                                class="xl:text-6xl lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-extrabold tracking-wider uppercase bg-clip-text text-transparent bg-gradient-to-r from-blue to-red-600">
+                                40% off</h1>
+                        </div>
+                        <p class="sm:text-base text-sm text-paragraph font-semibold max-w-xs mx-auto mb-8">Explore new
+                            colors to live
+                            in, and bring the
+                            soothing vibes of nature to your style.</p>
+
+                        <a href="#"
+                            class="bg-light-blue rounded-md text-xs text-white uppercase font-bold focus:outline-none px-8 py-3">shop
+                            now</a>
+                    </div>
+                    <div class="md:order-2 order-1">
+                        <img src="./assets/images/img-1.png" alt="" class="w-full md:max-w-lg max-w-xs mx-auto">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Slider Section End -->
+
+
+    <!-- Aditional Js -->
+    <script>
+        function carousel() {
+            return {
+                active: 0,
+                init() {
+                    var flkty = new Flickity(this.$refs.carousel, {
+                        wrapAround: true,
+                        autoPlay: 3000,
+                        prevNextButtons: true,
+                        pageDots: true,
+                        draggable: false
+                    });
+                    flkty.on('change', i => this.active = i);
+                },
+            }
+        }
+    </script>
 </body>
 
 </html>
