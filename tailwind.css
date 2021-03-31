@@ -58,6 +58,16 @@
 
 /* position outside */
 
+.hero-slider .flickity-prev-next-button.previous {
+    left: 8px;
+    margin-right: 0px;
+}
+
+.hero-slider .flickity-prev-next-button.next {
+    right: 8px;
+    margin-left: 0px;
+}
+
 @media(min-width: 1200px) {
     .hero-slider .flickity-prev-next-button.previous {
         left: -40px;
