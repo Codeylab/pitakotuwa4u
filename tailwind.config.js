@@ -25,6 +25,9 @@ module.exports = {
       fontFamily: {
         gloria: "'Gloria Hallelujah', cursive",
       },
+      boxShadow: {
+        1: "0px 30px 100px rgba(0, 0, 0, 0.1)",
+      },
     },
   },
   variants: {

@@ -577,6 +577,15 @@ body {
 .mb-10{
 	margin-bottom: 2.5rem;
 }
+.mb-64{
+	margin-bottom: 16rem;
+}
+.mt-2{
+	margin-top: 0.5rem;
+}
+.mb-14{
+	margin-bottom: 3.5rem;
+}
 .flex{
 	display: flex;
 }
@@ -613,6 +622,30 @@ body {
 .h-\[214px\]{
 	height: 214px;
 }
+.h-\[162px\]{
+	height: 162px;
+}
+.h-10{
+	height: 2.5rem;
+}
+.h-9{
+	height: 2.25rem;
+}
+.h-\[120px\]{
+	height: 120px;
+}
+.h-\[6vw\]{
+	height: 6vw;
+}
+.h-\[12vw\]{
+	height: 12vw;
+}
+.h-\[20vw\]{
+	height: 20vw;
+}
+.h-\[24vw\]{
+	height: 24vw;
+}
 .w-5{
 	width: 1.25rem;
 }
@@ -631,24 +664,23 @@ body {
 .w-32{
 	width: 8rem;
 }
+.w-10{
+	width: 2.5rem;
+}
+.w-9{
+	width: 2.25rem;
+}
 .max-w-xs{
 	max-width: 20rem;
 }
 .origin-top-right{
 	transform-origin: top right;
 }
-.auto-cols-max{
-	grid-auto-columns: -webkit-max-content;
-	grid-auto-columns: max-content;
-}
-.grid-flow-col{
-	grid-auto-flow: column;
-}
 .grid-cols-2{
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 }
-.grid-cols-12{
-	grid-template-columns: repeat(12, minmax(0, 1fr));
+.grid-cols-3{
+	grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-col{
 	flex-direction: column;
@@ -676,6 +708,9 @@ body {
 }
 .gap-8{
 	gap: 2rem;
+}
+.gap-2{
+	gap: 0.5rem;
 }
 .gap-y-8{
 	row-gap: 2rem;
@@ -706,6 +741,12 @@ body {
 }
 .rounded-\[10px\]{
 	border-radius: 10px;
+}
+.rounded{
+	border-radius: 0.25rem;
+}
+.rounded-lg{
+	border-radius: 0.5rem;
 }
 .rounded-b-md{
 	border-bottom-right-radius: 0.375rem;
@@ -789,6 +830,12 @@ body {
 .object-cover{
 	-o-object-fit: cover;
 	   object-fit: cover;
+}
+.p-3{
+	padding: 0.75rem;
+}
+.p-2{
+	padding: 0.5rem;
 }
 .px-6{
 	padding-left: 1.5rem;
@@ -948,6 +995,14 @@ body {
 	--tw-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
+.shadow-xl{
+	--tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+.shadow-1{
+	--tw-shadow: 0px 30px 100px rgba(0, 0, 0, 0.1);
+	box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
 
 .nav-pink-bg {
     background: linear-gradient(45deg, #fff 50%, #BD3E96 50%);
@@ -1082,6 +1137,9 @@ body {
 	.sm\:h-7{
 		height: 1.75rem;
 	}
+	.sm\:h-\[162px\]{
+		height: 162px;
+	}
 	.sm\:w-7{
 		width: 1.75rem;
 	}
@@ -1122,6 +1180,10 @@ body {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
+	.sm\:px-12{
+		padding-left: 3rem;
+		padding-right: 3rem;
+	}
 	.sm\:text-left{
 		text-align: left;
 	}
@@ -1154,9 +1216,6 @@ body {
 	.md\:order-2{
 		order: 2;
 	}
-	.md\:col-span-6{
-		grid-column: span 6 / span 6;
-	}
 	.md\:ml-16{
 		margin-left: 4rem;
 	}
@@ -1174,9 +1233,6 @@ body {
 	}
 	.md\:grid-cols-4{
 		grid-template-columns: repeat(4, minmax(0, 1fr));
-	}
-	.md\:grid-cols-12{
-		grid-template-columns: repeat(12, minmax(0, 1fr));
 	}
 	.md\:flex-row{
 		flex-direction: row;
@@ -1243,6 +1299,9 @@ body {
 	}
 	.lg\:grid-cols-1{
 		grid-template-columns: repeat(1, minmax(0, 1fr));
+	}
+	.lg\:grid-cols-2{
+		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 	.lg\:space-x-8 > :not([hidden]) ~ :not([hidden]){
 		--tw-space-x-reverse: 0;
