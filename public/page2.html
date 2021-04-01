@@ -14,6 +14,7 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <!-- Alpine.js -->
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js" defer></script>
+
 </head>
 
 <body>
@@ -172,44 +173,120 @@
     </header>
     <!-- Header Section End -->
 
+    <!-- Product Details Section Start -->
     <section class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 py-10">
-        <div class="grid lg:grid-cols-2 gap-8">
-            <div class="">
-                <div class="hero-slider carousel-main" x-data="carousel()" x-init="init()">
-                    <div class="" x-ref="carousel">
-                        <div class="w-full">
-                            <img src="./assets/images/img-14.png" alt="" class="w-full h-[460px]">
-                        </div>
-                        <div class="w-full">
-                            <img src="./assets/images/img-3.png" alt="" class="w-full h-[460px]">
-                        </div>
-                        <div class="w-full">
-                            <img src="./assets/images/img-4.png" alt="" class="w-full h-[460px]">
-                        </div>
-                        <div class="w-full">
-                            <img src="./assets/images/img-5.png" alt="" class="w-full h-[460px]">
-                        </div>
+        <div class="grid lg:grid-cols-2 gap-16">
+            <div class="lg:pr-12">
+                <div class="carousel hero-slider carousel-main" data-flickity='{"pageDots": false}'>
+                    <div class="carousel-cell">
+                        <img src="./assets/images/img-20.png" alt="" class="w-full h-[460px] object-contain">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./assets/images/img-21.png" alt="" class="w-full h-[460px] object-contain">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./assets/images/img-22.png" alt="" class="w-full h-[460px] object-contain">
+                    </div>
+                    <div class="carousel-cell">
+                        <img src="./assets/images/img-23.png" alt="" class="w-full h-[460px] object-contain">
+                    </div>
+
+                </div>
+
+                <div class="carousel carousel-nav mt-12"
+                    data-flickity='{ "asNavFor": ".carousel-main", "contain": true, "pageDots": false, "prevNextButtons": false }'>
+                    <div class="carousel-cell w-[105px] h-[105px] border border-border-light rounded-md mx-3">
+                        <img src="./assets/images/img-20.png" alt="" class="w-full h-full object-contain object-center">
+                    </div>
+                    <div class="carousel-cell w-[105px] h-[105px] border border-border-light rounded-md mx-3">
+                        <img src="./assets/images/img-21.png" alt="" class="w-full h-full object-contain object-center">
+                    </div>
+                    <div class="carousel-cell w-[105px] h-[105px] border border-border-light rounded-md mx-3">
+                        <img src="./assets/images/img-22.png" alt="" class="w-full h-full object-contain object-center">
+                    </div>
+                    <div class="carousel-cell w-[105px] h-[105px] border border-border-light rounded-md mx-3">
+                        <img src="./assets/images/img-23.png" alt="" class="w-full h-full object-contain object-center">
                     </div>
                 </div>
-                <div class="" x-data="carouselNav()" x-init="init()">
-                    <div class="" x-ref="carouselNav">
-                        <div class="border border-border-light rounded-md mx-3">
-                            <img src="./assets/images/img-14.png" alt="" class="w-24 h-[108px]">
-                        </div>
-                        <div class="border border-border-light rounded-md mx-3">
-                            <img src="./assets/images/img-3.png" alt="" class="w-24 h-[108px]">
-                        </div>
-                        <div class="border border-border-light rounded-md mx-3">
-                            <img src="./assets/images/img-4.png" alt="" class="w-24 h-[108px]">
-                        </div>
-                        <div class="border border-border-light rounded-md mx-3">
-                            <img src="./assets/images/img-5.png" alt="" class="w-24 h-[108px]">
-                        </div>
+
+            </div>
+
+            <div class="">
+                <h3 class="text-2xl text-black font-semibold mb-2">CMI drill and mortise hammer 900 W</h3>
+                <p class="text-base text-[#717171] font-semibold">Item No. 2797074</p>
+                <!-- Product review -->
+                <div class="flex items-center mt-5 mb-8">
+                    <div class="flex space-x-1 mr-3">
+                        <svg class="w-4 h-4 fill-current text-[#FFC107]" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.27 6.6a.86.86 0 00-.75-.6l-4.7-.42-1.87-4.36a.87.87 0 00-1.6 0L5.5 5.58l-4.71.43a.87.87 0 00-.5 1.51l3.56 3.12-1.05 4.63a.87.87 0 001.3.93l4.05-2.42 4.06 2.42a.86.86 0 001.3-.93l-1.06-4.63 3.56-3.12c.26-.22.36-.59.26-.92z"
+                                fill="" />
+                        </svg>
+                        <svg class="w-4 h-4 fill-current text-[#FFC107]" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.27 6.6a.86.86 0 00-.75-.6l-4.7-.42-1.87-4.36a.87.87 0 00-1.6 0L5.5 5.58l-4.71.43a.87.87 0 00-.5 1.51l3.56 3.12-1.05 4.63a.87.87 0 001.3.93l4.05-2.42 4.06 2.42a.86.86 0 001.3-.93l-1.06-4.63 3.56-3.12c.26-.22.36-.59.26-.92z"
+                                fill="" />
+                        </svg>
+                        <svg class="w-4 h-4 fill-current text-[#FFC107]" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.27 6.6a.86.86 0 00-.75-.6l-4.7-.42-1.87-4.36a.87.87 0 00-1.6 0L5.5 5.58l-4.71.43a.87.87 0 00-.5 1.51l3.56 3.12-1.05 4.63a.87.87 0 001.3.93l4.05-2.42 4.06 2.42a.86.86 0 001.3-.93l-1.06-4.63 3.56-3.12c.26-.22.36-.59.26-.92z"
+                                fill="" />
+                        </svg>
+                        <svg class="w-4 h-4 fill-current text-[#FFC107]" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.27 6.6a.86.86 0 00-.75-.6l-4.7-.42-1.87-4.36a.87.87 0 00-1.6 0L5.5 5.58l-4.71.43a.87.87 0 00-.5 1.51l3.56 3.12-1.05 4.63a.87.87 0 001.3.93l4.05-2.42 4.06 2.42a.86.86 0 001.3-.93l-1.06-4.63 3.56-3.12c.26-.22.36-.59.26-.92z"
+                                fill="" />
+                        </svg>
+                        <svg class="w-4 h-4 fill-current text-[#CBCBCB]" viewBox="0 0 17 17" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16.27 6.6a.86.86 0 00-.75-.6l-4.7-.42-1.87-4.36a.87.87 0 00-1.6 0L5.5 5.58l-4.71.43a.87.87 0 00-.5 1.51l3.56 3.12-1.05 4.63a.87.87 0 001.3.93l4.05-2.42 4.06 2.42a.86.86 0 001.3-.93l-1.06-4.63 3.56-3.12c.26-.22.36-.59.26-.92z"
+                                fill="" />
+                        </svg>
+                    </div>
+                    <p class="text-sm font-semibold text-[#CBCBCB] mr-5">(4.5)</p>
+                    <p class="text-sm font-semibold text-[#CBCBCB] mr-3">3252 Reviews</p>
+                    <p class="text-sm font-semibold text-[#CBCBCB] mr-5">4654 Orders</p>
+                </div>
+                <!-- product specification -->
+                <div class="mb-3">
+                    <p class="text-base font-semibold text-[#717171] mb-4">Scope of delivery</p>
+                    <p class="text-base font-semibold text-[#717171] mb-4">- 3 drills (Ø 8 mm / Ø 10 mm / Ø 12 mm x 150
+                        mm)</p>
+                    <p class="text-base font-semibold text-[#717171] mb-4">- 1 flat chisel (14 mm x 250 mm)</p>
+                    <p class="text-base font-semibold text-[#717171] mb-4">- 1 pointed chisel (14 mm x 250 mm)</p>
+                    <p class="text-base font-semibold text-[#717171] mb-4">- 1 depth stop</p>
+                    <p class="text-base font-semibold text-[#717171] mb-4">- 1 keyed drill chuck</p>
+                </div>
+                <!-- Quantity  -->
+                <div class="">
+                    <h5 class="text-lg font-semibold text-black mb-4">Quantity</h5>
+                    <div class="flex items-center space-x-2">
+                        <button class="">
+                            <svg width="8" height="4" viewBox="0 0 8 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 3.02h7.98V.77H0v2.25z" fill="#717171" />
+                            </svg>
+                        </button>
+                        <input type="text"
+                            class="w-8 h-8 border border-border-light rounded bg-[#F2F2F2] font-semibold text-black text-center appearance-none"
+                            placeholder="01" value="02">
+                        <button class="">
+                            <svg width="11" height="10" viewBox="0 0 11 10" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10.27 3.67H6.63V.03h-2.2v3.64H.79v2.2h3.64v3.65h2.2V5.87h3.64v-2.2z"
+                                    fill="#717171" />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    <!-- Product Details Section End -->
 
 
 

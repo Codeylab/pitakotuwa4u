@@ -126,3 +126,11 @@
     border-radius: 8px;
     background: #BD3E96;
 }
+
+/* cell number */
+
+/* .carousel-cell:before {
+    display: block;
+    text-align: center;
+    content: counter(carousel-cell);
+} */
