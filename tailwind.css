@@ -30,7 +30,7 @@
 
 @media (min-width:768px) {
     .slider-bg {
-        background: linear-gradient(50deg, #E2E2E2 55%, #B7B7B7 55%);
+        background: linear-gradient(60deg, #E2E2E2 54%, #B7B7B7 54%);
     }
 }
 
@@ -126,11 +126,3 @@
     border-radius: 8px;
     background: #BD3E96;
 }
-
-/* cell number */
-
-/* .carousel-cell:before {
-    display: block;
-    text-align: center;
-    content: counter(carousel-cell);
-} */

@@ -148,24 +148,45 @@
         </div>
 
         <!-- Nav Menu Start -->
-        <div class="border-t-2 border-pink half-pink-white-bg w-full">
-            <div class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 flex items-center w-full nav-pink-bg ">
-                <div class="flex w-32 ">
-                    <button class="text-xs text-paragraph font-semibold flex pt-5 pb-3">
-                        <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x=".06" y=".59" width="18.36" height="2.45" rx="1.23" fill="#727272" />
-                            <rect x=".06" y="7.34" width="18.36" height="2.45" rx="1.23" fill="#727272" />
-                            <rect x=".06" y="14.1" width="18.36" height="2.45" rx="1.23" fill="#727272" />
-                        </svg>
-                        <span class="ml-2">All Categories</span>
-                    </button>
+        <div class="" x-data="{
+            openNav: false,}">
+            <div class="border-t-2 border-pink half-pink-white-bg w-full">
+                <div class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 flex items-center w-full nav-pink-bg ">
+                    <div class="flex w-32 ">
+                        <button class="text-xs text-paragraph font-semibold focus:outline-none flex pt-5 pb-3"
+                            @click="openNav = !openNav">
+                            <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect x=".06" y=".59" width="18.36" height="2.45" rx="1.23" fill="#727272" />
+                                <rect x=".06" y="7.34" width="18.36" height="2.45" rx="1.23" fill="#727272" />
+                                <rect x=".06" y="14.1" width="18.36" height="2.45" rx="1.23" fill="#727272" />
+                            </svg>
+                            <span class="ml-2">All Categories</span>
+                        </button>
+                    </div>
+                    <div class="hidden md:block lg:ml-32 md:ml-16 lg:pr-4 lg:space-x-8 md:space-x-4 py-4 ">
+                        <a href="#" class="font-medium text-light-pink text-sm">Pitakotuwa Express</a>
+                        <a href="#" class="font-medium text-light-pink text-sm">All Shops</a>
+                        <a href="#" class="font-medium text-light-pink text-sm">Pettah Streets</a>
+                        <a href="#" class="font-medium text-light-pink text-sm">Pettah Town</a>
+                        <a href="#" class="font-medium text-light-pink text-sm">Foreign Fair</a>
+                    </div>
                 </div>
-                <div class="hidden md:block lg:ml-32 md:ml-16 lg:pr-4 lg:space-x-8 md:space-x-4 py-4 ">
-                    <a href="#" class="font-medium text-light-pink text-sm">Pitakotuwa Express</a>
-                    <a href="#" class="font-medium text-light-pink text-sm">All Shops</a>
-                    <a href="#" class="font-medium text-light-pink text-sm">Pettah Streets</a>
-                    <a href="#" class="font-medium text-light-pink text-sm">Pettah Town</a>
-                    <a href="#" class="font-medium text-light-pink text-sm">Foreign Fair</a>
+            </div>
+            <div class="md:hidden bg-pink -mt-1" x-show="openNav">
+                <div class="container mx-auto sm:px-8 px-6">
+                    <div class="flex flex-col space-y-4 py-4 ">
+                        <a href="#" class="font-medium text-light-pink w-full py-2 text-sm">Pitakotuwa
+                            Express</a>
+                        <a href="#" class="font-medium text-light-pink w-full py-2 text-sm">All
+                            Shops</a>
+                        <a href="#" class="font-medium text-light-pink w-full py-2 text-sm">Pettah
+                            Streets</a>
+                        <a href="#" class="font-medium text-light-pink w-full py-2 text-sm">Pettah
+                            Town</a>
+                        <a href="#" class="font-medium text-light-pink w-full py-2 text-sm">Foreign
+                            Fair</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -174,7 +195,7 @@
     <!-- Header Section End -->
 
     <!-- Product Details Section Start -->
-    <section class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 py-10">
+    <section class="container mx-auto xl:max-w-[1182px] sm:px-8 px-6 py-16">
         <div class="grid lg:grid-cols-2 gap-16">
             <div class="lg:pr-8">
                 <div class="carousel hero-slider carousel-main" data-flickity='{"pageDots": false}'>
@@ -320,44 +341,44 @@
         <div class="grid xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-3 grid-cols-2 sm:gap-5 gap-3">
             <div class="border border-border-light rounded-[10px] py-3 sm:px-2 px-1">
                 <img src="./assets/images/img-2.png" alt="" class="w-full h-[130px] object-contain mb-2">
-                <h6 class="sm:text-xs text-[10px] text-center text-[#4B4B4B] font-semibold uppercase mb-2">Sun Joe 13
+                <h6 class="sm:text-xs text-[10px] text-center text-item-text font-semibold uppercase mb-2">Sun Joe 13
                     Amp Electric
                     Pressure Washer</h6>
-                <p class="text-sm text-[#F3752E] font-bold  text-center">Rs 18,000.00</p>
+                <p class="sm:text-sm text-xs text-orange font-bold  text-center">Rs 18,000.00</p>
             </div>
             <div class="border border-border-light rounded-[10px] py-3 sm:px-2 px-1">
                 <img src="./assets/images/img-3.png" alt="" class="w-full h-[130px] object-contain mb-2">
-                <h6 class="sm:text-xs text-[10px] text-center text-[#4B4B4B] font-semibold uppercase mb-2">Nilfisk C110
+                <h6 class="sm:text-xs text-[10px] text-center text-item-text font-semibold uppercase mb-2">Nilfisk C110
                     3-5 PC X-Tra
                     Pressure Washer</h6>
-                <p class="text-sm text-[#F3752E] font-bold  text-center">Rs 19,500.00</p>
+                <p class="sm:text-sm text-xs text-orange font-bold  text-center">Rs 19,500.00</p>
             </div>
             <div class="border border-border-light rounded-[10px] py-3 sm:px-2 px-1">
                 <img src="./assets/images/img-4.png" alt="" class="w-full h-[130px] object-contain mb-2">
-                <h6 class="sm:text-xs text-[10px] text-center text-[#4B4B4B] font-semibold uppercase mb-2">Stiga Combi
+                <h6 class="sm:text-xs text-[10px] text-center text-item-text font-semibold uppercase mb-2">Stiga Combi
                     50 SQ B
                     Lawn Mower</h6>
-                <p class="text-sm text-[#F3752E] font-bold  text-center">Rs 80,000.00</p>
+                <p class="sm:text-sm text-xs text-orange font-bold  text-center">Rs 80,000.00</p>
             </div>
             <div class="border border-border-light rounded-[10px] py-3 sm:px-2 px-1">
                 <img src="./assets/images/img-5.png" alt="" class="w-full h-[130px] object-contain mb-2">
-                <h6 class="sm:text-xs text-[10px] text-center text-[#4B4B4B] font-semibold uppercase mb-2">Bosch Corded
+                <h6 class="sm:text-xs text-[10px] text-center text-item-text font-semibold uppercase mb-2">Bosch Corded
                     SDS
                     Hammer Drill</h6>
-                <p class="text-sm text-[#F3752E] font-bold  text-center">Rs 15,400.00</p>
+                <p class="sm:text-sm text-xs text-orange font-bold  text-center">Rs 15,400.00</p>
             </div>
             <div class="border border-border-light rounded-[10px] py-3 sm:px-2 px-1">
                 <img src="./assets/images/img-6.png" alt="" class="w-full h-[130px] object-contain mb-2">
-                <h6 class="sm:text-xs text-[10px] text-center text-[#4B4B4B] font-semibold uppercase mb-2">Bosch AHM 38
+                <h6 class="sm:text-xs text-[10px] text-center text-item-text font-semibold uppercase mb-2">Bosch AHM 38
                     Garden
                     Lawn Mower</h6>
-                <p class="text-sm text-[#F3752E] font-bold  text-center">Rs 10,000.00</p>
+                <p class="sm:text-sm text-xs text-orange font-bold  text-center">Rs 10,000.00</p>
             </div>
             <div class="border border-border-light rounded-[10px] py-3 sm:px-2 px-1">
                 <img src="./assets/images/img-7.png" alt="" class="w-full h-[130px] object-contain mb-2">
-                <h6 class="text-xs text-center text-[#4B4B4B] font-semibold uppercase mb-2">DEWALT DC970K
+                <h6 class="text-xs text-center text-item-text font-semibold uppercase mb-2">DEWALT DC970K
                     Compact Drill Kit</h6>
-                <p class="text-sm text-[#F3752E] font-bold  text-center">Rs 16,800.00</p>
+                <p class="sm:text-sm text-xs text-orange font-bold  text-center">Rs 16,800.00</p>
             </div>
         </div>
 
